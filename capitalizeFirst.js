@@ -1,11 +1,11 @@
-// capitalizeFirst.js
-const assert = require("assert");
+// const assert = require("assert");
 
 // WRITE THE ACTUAL FUNCTION HERE
 function capitalizeFirst(input) {
   return input.length > 0 ? input[0].toUpperCase() + input.slice(1) : "";
 }
 
+/* Version JS 
 // Check that capitalizeFirst is a function
 assert.strictEqual(typeof capitalizeFirst, "function");
 // Check that capitalizeFirst accepts one argument
@@ -16,3 +16,6 @@ assert.strictEqual(capitalizeFirst("javaScript"), "JavaScript");
 assert.strictEqual(capitalizeFirst("z"), "Z");
 // Check that it works for an empty string
 assert.strictEqual(capitalizeFirst(""), "");
+*/
+
+module.exports = capitalizeFirst;

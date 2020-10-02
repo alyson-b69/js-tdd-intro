@@ -1,4 +1,4 @@
-const assert = require("assert");
+// const assert = require("assert");
 
 function capitalizeFirstLetters(string) {
   var splitString = string.toLowerCase().split(" ");
@@ -9,6 +9,7 @@ function capitalizeFirstLetters(string) {
   return splitString.join(" ");
 }
 
+/* TEST JS 
 // une chaîne avec plusieurs mots
 assert.strictEqual(
   capitalizeFirstLetters("une chaine avec plusieurs mots"),
@@ -18,3 +19,6 @@ assert.strictEqual(
 assert.strictEqual(capitalizeFirstLetters("z"), "Z");
 // une chaîne vide
 assert.strictEqual(capitalizeFirstLetters(""), "");
+*/
+
+module.exports = capitalizeFirstLetters;
