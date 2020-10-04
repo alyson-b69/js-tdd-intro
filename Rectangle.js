@@ -5,11 +5,21 @@ class Rectangle {
     this.b = b;
   }
 
-  isSquare() {}
+  isSquare() {
+    if (this.a === this.b) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
-  getArea() {}
+  getArea() {
+    return this.a * this.b;
+  }
 
-  getPerimeter() {}
+  getPerimeter() {
+    return this.a * 2 + this.b * 2;
+  }
 }
 
 module.exports = Rectangle;
